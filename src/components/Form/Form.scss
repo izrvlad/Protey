@@ -1,0 +1,30 @@
+.Form {
+  background-color: #AFEEEE;
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  &__change {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    &__description {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.input__wrapper {
+  flex: 0 0 49%
+}
+@media(max-width: 565px) {
+  .Form{
+    &__change{
+      flex-direction: column;
+      margin-bottom: 1px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.Input {
+  padding: 12px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 15px;
+  color: dimgrey;
+  outline: none;
+  margin-bottom: 5px;
+
+  &:active, &:focus {
+    border: 2px solid blue;
+  }
+}
+
+label {
+  color: red;
+}

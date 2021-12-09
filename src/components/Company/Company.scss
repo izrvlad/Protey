@@ -1,0 +1,79 @@
+.Company {
+  position: relative;
+  z-index: 23;
+  width: 300px;
+  display: inline-flex;
+  flex-direction: column;
+  background-color: #FFFAF0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #778899;
+    border-radius: 10px 10px 0 0;
+
+    p {
+      margin: 0;
+      color: #FFFAF0;
+    }
+
+    span {
+      cursor: pointer;
+      display: flex;
+      width: 20px;
+      height: 20px;
+      justify-content: center;
+      align-items: center;
+      color: #FFFAF0;
+      background-color: red;
+      border-radius: 50%;
+      box-sizing: border-box;
+      position: relative;
+
+      &:before, &:after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 16px;
+        background-color: #FFFAF0;
+        top: 45%;
+        left: 2px;
+        transform: translateY(-50%);
+      }
+
+      &:before {
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &__content {
+    padding: 10px;
+    color: #000000;
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 300px;
+
+  &:before {
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 4px;
+    background-color: red;
+  }
+}

@@ -1,0 +1,13 @@
+.Button {
+  border: none;
+  background-color: #778899;
+  color: #FFFAF0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 7px;
+}
+@media(max-width: 565px) {
+  .Button{
+    width: 100%;
+  }
+}
